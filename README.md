@@ -28,7 +28,7 @@ O Sistema Web consiste em apresentadar dados de um cep por meio de uma consulta 
 
 Pagina inicial, onde é possivel inserir um cep:
 
-![PgInicial](readmeimgs/pginicial.png)
+![PgInicial](ConsultaCep/readmeimgs/pginicial.png)
 
 Após digitar um cep válido, é apresentado os dados da consulta:
 
