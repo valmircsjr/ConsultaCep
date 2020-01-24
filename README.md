@@ -5,13 +5,15 @@ Sistema Web Desenvolvido em Java EE para obter dados de um Cep por meio de um We
 ## Indice
 1. [Tecnologias utilizadas](#id1)
 2. [Sistema](#id2)
+3. [Como executar](#id3)
+4. [Observações](#id4)
+
 
 ---
 
 ### Tecnologias utilizadas <a name="id1"></a>
 * Java EE
 * Spring Boot
-* Rest
 * JUnit
 * Thymeleaf
 * JavaScript
@@ -37,7 +39,9 @@ Se o valor inserido for um cep invalido, o sistema emite um aviso:
 
 ----
 
-### Como executar
+### Como executar <a name="id3"></a>
+
+Será necessário instalar o Jdk, o Maven e configurar as respectivas variaveis de ambiente.
 
 
 Faça o clone do repositório:
@@ -58,7 +62,8 @@ Abra seu navegador e acesse: http://localhost:8080/
 
 ---
 
-Obs: O .jar já está feito, ou seja, basta a penas rodar a aplicação. **Caso haja algum problema, refaça o build**:
+### Observações <a name="id4"></a>
+O .jar já está feito, ou seja, basta a penas rodar a aplicação. **Caso haja algum problema, refaça o build**:
 ```
  mvn -f .\consultacep\pom.xml clean install
 ```
