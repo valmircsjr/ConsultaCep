@@ -32,11 +32,11 @@ Pagina inicial, onde é possivel inserir um cep:
 
 Após digitar um cep válido, é apresentado os dados da consulta:
 
-![consulta](readmeimgs/consulta.png)
+![consulta](https://raw.githubusercontent.com/valmircsjr/ConsultaCep/master/readmeImgs/consulta.png)
 
 Se o valor inserido for um cep invalido, o sistema emite um aviso:
 
-![aviso](readmeimgs/aviso.png)
+![aviso](https://raw.githubusercontent.com/valmircsjr/ConsultaCep/master/readmeImgs/aviso.png)
 
 ----
 
