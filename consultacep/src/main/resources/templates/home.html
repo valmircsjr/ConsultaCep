@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>Posts</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"></link>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <form class="form-horizontal" th:action="@{/busca}" method="GET" style="margin: 10px">
+        <label for="cep">Digite um CEP:</label>
+        <input type="text" name="cep">
+        <button type="submit" class="btn btn-sm btn-primary">Buscar</button>
+    </form>
+
+    <table th:each="cep : ${ceps}" style="margin: 10px">
+        <tr>
+            <td>Cep:</td>
+            <th th:text = "${cep.cep}"></th>
+        </tr>
+            <td>Logradouro:</td>
+            <th th:text = "${cep.logradouro}"></th>
+        <tr>
+            <td>Complemento:</td>
+            <th th:text = "${cep.complemento}"></th>
+        </tr>
+            <td>Bairro:</td>
+            <th th:text = "${cep.bairro}"></th>
+        <tr>
+            <td>Localidade:</td>
+            <th th:text = "${cep.localidade}"></th>
+        </tr>
+        <tr>
+            <td>UF:</td>
+            <th th:text = "${cep.uf}"></th>
+        </tr>
+        <tr>
+            <td>Unidade:</td>
+            <th th:text = "${cep.unidade}"></th>
+        </tr>
+        <tr>
+            <td>IBGE:</td>
+            <th th:text = "${cep.ibge}"></th>
+        </tr>
+        <tr>
+            <td>GIA:</td>
+            <th th:text = "${cep.gia}"></th>
+        </tr>
+        <button class="btn btn-danger" onclick="download()">Download PDF</button>
+    </table>
+
+    <div class="container" style="margin-top:60px;">
+		<div th:if="${error != null}" class="alert alert-danger" role="alert"><span th:text="${error}">Erro</span></div>
+	</div>	
+
+    <script type="text/javascript">
+
+        function download() {
+            var a = document.createElement('a');
+            var pdf = "consultacep/docs/DadosCep.pdf";
+            var blob = new Blob([pdf], {type: "application/pdf"})
+            a.href = window.URL.createObjectURL(blob);
+            a.download = "DadosCep.pdf";
+            a.click();
+        }
+    </script>
+
+</body>
+</html>
