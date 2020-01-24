@@ -36,7 +36,7 @@ public class Utils {
 	 * @param data Dados que serão colocados no documento.
 	 */
 	public void GeneratorPDF(String data) {
-		String fileName = "consultacep/docs/DadosCep.pdf";
+		String fileName = "consultacep/src/main/resources/docs/DadosCep.pdf";
 		Document doc = new Document();
 		try {
 			PdfWriter.getInstance(doc, new FileOutputStream(fileName));

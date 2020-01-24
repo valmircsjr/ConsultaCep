@@ -24,7 +24,7 @@ Sistema Web Desenvolvido em Java EE para obter dados de um Cep por meio de um We
 
 ### Sistema <a name="id2"></a>
 
-O Sistema Web consiste em apresentadar dados de um cep por meio de uma consulta em uma API. Um pdf é gerado em **consultacep/docs**. Há um botão de donwload do PDF, porém ainda não esta funcionando.
+O Sistema Web consiste em apresentadar dados de um cep por meio de uma consulta em uma API. Um pdf é gerado em **consultacep/src/main/resources/docs/**. Há um botão de donwload do PDF, porém ainda não esta funcionando.
 
 Pagina inicial, onde é possivel inserir um cep:
 
@@ -45,31 +45,26 @@ Se o valor inserido for um cep invalido, o sistema emite um aviso:
 Será necessário instalar o Jdk, o Maven e configurar as respectivas variaveis de ambiente.
 
 
-Faça o clone do repositório:
+1.Faça o clone do repositório:
 ```
 git clone https://github.com/valmircsjr/ConsultaCep.git
 ```
 
+2.Importe para alguma IDE. 
 
+3.Execute o maven clean e maven install. 
 
-Para executar o programa:
+4.Execute o deploy na aplicação.
 
-```
-java -jar .\consultacep\target\consultacep-0.0.1-SNAPSHOT.jar
-```
-
-
-Abra seu navegador e acesse: http://localhost:8080/
+5.Abra seu navegador e acesse: http://localhost:8080/
 
 ---
 
 ### Observações <a name="id4"></a>
-O .jar já está feito, ou seja, basta a penas rodar a aplicação. **Caso haja algum problema, refaça o build**:
-```
- mvn -f .\consultacep\pom.xml clean install
-```
 
+1. O PDF é gerado automaticamente quando é feita uma busca de um cep. Como não consegui concluir a funcionalidade de Download do PDF, é necessário executar o programa em alguma IDE para poder acessar o diretório do arquivo PDF.
 
+---
 
 
 

@@ -59,7 +59,7 @@
 
         function download() {
             var a = document.createElement('a');
-            var pdf = "consultacep/docs/DadosCep.pdf";
+            var pdf = "consultacep/src/main/resources/docs/DadosCep.pdf";
             var blob = new Blob([pdf], {type: "application/pdf"})
             a.href = window.URL.createObjectURL(blob);
             a.download = "DadosCep.pdf";
