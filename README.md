@@ -62,7 +62,7 @@ git clone https://github.com/valmircsjr/ConsultaCep.git
 
 ### Observações <a name="id4"></a>
 
-1. O PDF é gerado automaticamente quando é feita uma busca de um cep. Como não consegui concluir a funcionalidade de Download do PDF, é necessário executar o programa em alguma IDE para poder acessar o diretório do arquivo PDF.
+1. O PDF é gerado automaticamente quando é feita uma busca de um cep. Como não consegui concluir a funcionalidade de Download do PDF, é necessário executar o programa em alguma IDE para poder acessar o diretório do arquivo.
 
 ---
 
