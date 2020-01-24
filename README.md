@@ -45,18 +45,18 @@ Se o valor inserido for um cep invalido, o sistema emite um aviso:
 Será necessário instalar o Jdk, o Maven e configurar as respectivas variaveis de ambiente.
 
 
-1.Faça o clone do repositório:
+1. Faça o clone do repositório:
 ```
 git clone https://github.com/valmircsjr/ConsultaCep.git
 ```
 
-2.Importe para alguma IDE. 
+2. Importe o projeto para alguma IDE. 
 
-3.Execute o maven clean e maven install. 
+3. Execute o maven clean e maven install. 
 
-4.Execute o deploy na aplicação.
+4. Execute o deploy da aplicação.
 
-5.Abra seu navegador e acesse: http://localhost:8080/
+5. Abra seu navegador e acesse: http://localhost:8080/
 
 ---
 
