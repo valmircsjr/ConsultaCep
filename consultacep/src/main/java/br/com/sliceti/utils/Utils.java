@@ -68,6 +68,7 @@ public class Utils {
 
 	/**
 	 * Remoção dos caracteres especiais.
+	 * Base regex: https://www.vogella.com/tutorials/JavaRegularExpressions/article.html
 	 * @param strCep String com o cep.
 	 */
 	public String removeCaracEspString(String strCep) {
