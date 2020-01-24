@@ -30,7 +30,7 @@ Pagina inicial, onde é possivel inserir um cep:
 
 ![PgInicial](readmeimgs/pginicial.png)
 
-Após digitar um cep válido, é aprensando os dados da consulta:
+Após digitar um cep válido, é apresentado os dados da consulta:
 
 ![consulta](readmeimgs/consulta.png)
 
